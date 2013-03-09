@@ -4,6 +4,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+    </ViewFlipper>
+    
+    <Button
+        android:id="@+id/btnPush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="push out/in" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+    
     <TextView
         android:id="@+id/txtVibration"
         android:layout_width="32dp"
